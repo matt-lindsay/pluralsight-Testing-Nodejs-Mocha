@@ -42,3 +42,6 @@ Functional testing - start on the outside, end on the outside. Black box testing
 - `./node_modules/.bin/mocha "./test/**/*.spec.js"` to execute Mocha on the test directory and below.
 - Add the above line to package.json's test script.
 - `BDD` Behaviour Driven Development testing.
+- Default timeout for a Mocha test is 2000 miliseconds.
+- Mocha does not work well with ES6 arrow functions as you can't access the `this` keyword.
+- 
