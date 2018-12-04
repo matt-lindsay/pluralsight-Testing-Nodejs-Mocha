@@ -1,0 +1,22 @@
+{
+  "name": "pluralsight-testing-nodejs-mocha",
+  "version": "1.0.0",
+  "description": "### Introduction",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha './test/**/*.spec.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt-lindsay/pluralsight-Testing-Nodejs-Mocha.git"
+  },
+  "author": "Matt Lindsay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matt-lindsay/pluralsight-Testing-Nodejs-Mocha/issues"
+  },
+  "homepage": "https://github.com/matt-lindsay/pluralsight-Testing-Nodejs-Mocha#readme",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
+}
