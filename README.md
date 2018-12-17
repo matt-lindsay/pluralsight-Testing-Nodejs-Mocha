@@ -44,4 +44,34 @@ Functional testing - start on the outside, end on the outside. Black box testing
 - `BDD` Behaviour Driven Development testing.
 - Default timeout for a Mocha test is 2000 miliseconds.
 - Mocha does not work well with ES6 arrow functions as you can't access the `this` keyword.
-- 
+- Use `describe.only`and `it.only` to isolate tests.
+- Use `describe.skip`and `it.skip` to ignore tests, incase they are broken. Better than commenting them out as when checking in the tests will have gone.
+- `this.skip()` to ignore something environmental e.g. 
+  ```
+      it('Should return false if not authorized', function (done) {
+        if (true) { // something environmental.
+          this.skip();
+        } else {
+          authController.isAuthorizedAsync('admin',
+          function (isAuth) {
+            assert.equal(false, isAuth);
+            done();
+          });
+        }
+      });
+  ```
+  - Mocha is a test runner
+
+
+#### BDD Style Assertions
+
+- Assert is clunky
+- Chai is better for assertions
+- Two options
+  - expect
+  - should
+- Verifying Objects
+- BDD is descriptive
+- now going tp try using `expect`
+- `expect(something).to.be`
+- `expect(something).to.equal`

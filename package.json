@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/matt-lindsay/pluralsight-Testing-Nodejs-Mocha#readme",
   "dependencies": {
+    "chai": "^4.2.0",
     "mocha": "^5.2.0"
   }
 }
