@@ -75,3 +75,8 @@ Functional testing - start on the outside, end on the outside. Black box testing
 - now going tp try using `expect`
 - `expect(something).to.be`
 - `expect(something).to.equal`
+- Should is clear and natural language.
+- something.should.be ..equal ..have
+- `auth.shoube.be.true`
+- chaijs.com/api/bdd
+- 
